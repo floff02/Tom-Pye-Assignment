@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body>
+    <div class = "Navigation_Bar"> <!--This creates the divistions for the navigation bar at the top of the screen and contains the kfc logo as well as the list for the navigation options -->
+      <div class = "drop-menu">
+        <img src = "assets/hamburger menu.png" onclick = "document.location = 'index.html'" target ="blank" alt = "logo" width = "40px">
+      </div>
+
+      <ul> <!--This creats the options for the navigation bar using an unordered list and also makes them into links which would be used to link to seperate parts of the website were them to be made-->
+        <li><a href = "">Order</a></li>
+        <li><a href = "">Offers</a></li>
+        <li><a href = "">Menu</a></li>
+        <li><a href = "">Delivery</a></li>
+        
+        <div class="dropdown">
+          <li><a href = "" class="dropbtn">More</a></li>
+        <div class="DD-content"> <!-- This is the content of the dropdown from the "more" button -->
+          <a href="">About BK</a>
+          <a href="">Burger King For Good</a>
+          <a href="">Nutrition Explorer</a>
+          <a href="">FAQs</a>
+          <a href="">Allergen Info</a>
+          <a href="">Terms & Conditions</a>
+          <a href="">Animal Welfare Policy</a>
+          <a href="">Gender Pay Gap</a>
+          <a href="">Corperate Policies</a>
+          <a href="">Get In Touch</a>
+          <a href="">Careers</a>
+          <a href="">Privacy & Cookies Policy</a>
+          <a href="">Tax Strategy</a>
+        </div>
+      </div>     
+        <div class = "BK_Logo"> <!--This creates a seperate divition within the navigation bar containing the logo that can be seperatly styled from the navigation bar options-->
+          <img src = "assets/Bk_Logo.png" alt = "logo" width = "70px">
+          </div>
+        <div class = "sign_up">
+            <img src = "assets/signup.png" onclick = "document.location = 'index.html'" target ="blank" alt = "logo" width = "200px">
+        </div>
+    </div>
+    
+    <div class = "main_content"> <!--main body of advertisement content, images are fetched from the assets folder and are styled accordingly using the css in a grid format-->
+      <img src = "assets/katsucurrymain.png" onclick = "document.location = 'index.html'" target ="blank" alt = " Katsu Curry" width = "100%">
+    </div>
+      <div class = "row">
+        <div class = "hcolumn" id = "column">
+          <img src = "assets/biggest plot twist.png" onclick = "document.location = 'index.html'" target ="blank" alt = "plot twist" width = "35%">
+          <img src = "assets/free whopper.png" onclick = "document.location = 'index.html'" target ="blank" alt = "Free Whopper" width = "35%">
+        <div class = "column" id = "column">
+          <img src = "assets/great offers.png" onclick = "document.location = 'index.html'" target ="blank" alt = "great offers" width = "35%">
+          <img src = "assets/100free.png" onclick = "document.location = 'index.html'" target ="blank" alt = "100% free" width ="35%">
+        </div>
+      </div>
+    </div>
+    
+    <div class = "PD"><!--Phone discount section with the phone ordering image set to overflow from the top of the division-->
+    <div class = "phone_ordering" >
+      <img src = "assets/phone ordering.png" onclick = "document.location = 'index.html'" target ="blank" alt = "Phone ordering" width = 375px >
+    </div>
+      <div class = "discount">
+        <p>Save £££<br>With offers on<br> demand </p>
+        <div class = "Play_Buttons">
+          <img src = "assets/play store buttons.png" onclick = "document.location =   'index.html'" target ="blank" alt = "Play Store Buttons" width = 100%>
+        </div>
+        <div class = "trademark">
+          <p>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S.<br> and other countries. App Store is a service mark of Apple Inc. Google Play is a<br> trademark of Google Inc. Terms apply.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class = "footer">
+      <div class = "footer_col 1"><!--left column of the footer with general info links-->
+          <h4>BK® INFO</h4>
+          <a href ="">About BK®</a>
+          <a href ="">Policies</a>
+          <a href ="">Get in touch</a>
+          <a href ="">Terms & Conditions</a>
+          <a href ="">Guest Trac</a>
+          <a href ="">Trademarks</a>
+        </div>
+        <div class = "footer_col 2"><!--right column of the footer with general info links-->
+          <h4>BK® AND YOU</h4>
+          <a href ="">Careers</a>
+          <a href ="">Privacy Policy</a>
+          <a href ="">Modern Slavery Statement</a>
+          <a href ="">Tax Strategy</a>
+          <a href ="">BK® Delivers</a>
+        </div>
+    </div>
+    <div class = "locationbar"><!--item availability store locator bar that forwards to a google maps location of the nearest burger king stores-->
+      <img src="assets/locator.png" target="_blank" onclick="window.open('https://www.google.com/maps/search/Burger+King/@53.7376414,-1.6395226,12z/data=!3m1!4b1');"/>
+    </div>
+    <script src="script.js"></script><!--runs script to set background colours-->
+  </body>
+</html>

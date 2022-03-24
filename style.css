@@ -1,0 +1,185 @@
+ul { /*This styles the list within the navigation bar, it removes all text decoration such as standard hyperlink styles like underlining and the text being blue, is changes the display to be inline with other content in the division such as the Burger King logo and not underneath the BK logo, and changes the cursor when the cursor is hovered over it to a pointer instead of a text highlighter*/
+  list-style-type: none;
+  
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 2em;
+  cursor: pointer;
+}
+li a { /*This styles the the physical text in the navigation bar, changing the font size, the weight of the text making it bold, and changes the font family, as well as making the text black which makes it easier to see on the white background*/
+  margin: 10px;
+  padding: 4px;
+  text-decoration: none;
+  line-height: 4em;
+  
+  font-family: georgia;
+  
+  font-size: 1em;
+  color: black;
+  
+}
+li a:hover {/*This changes the colour of the naivgation bar text when the cursor is hovered over it from black to grey*/
+  color: grey;
+}
+li {/*This makes the unorderlist float from top to bottom, to left to right, making the navigation bar more appealing, easy to use and less clunky*/
+  float: left;
+}
+
+.Navigation_Bar{/*This section sets the physical box of the navigation bar, as well as setting its position to fixed, which means that as the user scrolls down the webpage the navigation bar stays at the top of the screen at all times, making the user able to navigate the website much easier*/
+  height: 6em;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  background-color: #EEE5D8;
+  top: 0;
+}
+.BK_Logo{ /*within the navigation bar, the logo is also fixed to the top of the screen, and has its physical dimensions fixed*/
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 24em;
+  
+  cursor: pointer;
+}
+
+.drop-menu{ /*Positions the hamburger menu to the top left of the screen, in line with the navigation bar*/
+  display: inline-block;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.sign_up{ /*Positions the the sign up button to the right side of the navigation bar*/
+  float: right;
+  cursor: pointer;
+  vertical-align: middle;
+  padding-left: 45em;
+  padding-top: 10px;
+}
+
+
+.dropdown { /*sets the drop down menu to float to the left and makes the excess drop down menu hidden*/
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn { /*This styles the content for the drop down menu button according to the rest of the website*/
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(80, 35, 20);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: georgia;
+  margin: 0; 
+}
+
+.DD-content { /*styles the drop down menu back ground, and makes the drop down menu position fixed so it can be access at any time*/
+  display: none;
+  position: absolute;
+  background-color: #EEE5D8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.DD-content a { /*Styles the text options within the drop down menu, making them are uniform*/
+  float: none;
+  color: rgb(80, 35, 20);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.DD-content a:hover { /*Changes the background colour of the dropdown bar menu options to white when they are hovered over*/
+  background-color: white;
+}
+
+.dropdown:hover .DD-content {
+  display: block;
+}
+.main_content{/*Sets the space between the left and right side of the to 0, set the image size to the full 100% of the image, and adds padding to the top of the image*/
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 7em;
+} 
+.row{ /*Between row 108 and 124, this creates a flexable grid format for the four images and centers the grid format of images*/
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-left: 27%;
+  padding-bottom: 100px;
+}
+.column{
+  flex: 50%;
+  padding: 0 4px;
+  
+}
+.column img{
+  margin-top: 8px;
+  verticle-align: middle;
+  cursor: pointer;
+}
+img{ /* changes the mouse to a cursor when hovering over an image*/
+  cursor: pointer;
+}
+.PD{ /*Between lines 128 and 148, this changes the display of the division to flexable which allows the phone image and the discount paragraph to be positioned side by side on the webpage*/
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+}
+.phone_ordering{
+  position: relative;
+  width: 65%;
+}
+.phone_ordering img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.discount p{
+  font-size: 32px;
+  font-weight: bolder;
+}
+.trademark p{
+  font-size: 13px;
+}
+
+.footer{ /*Changes the dimesions of the footer aswell as the padding/ position of the footer*/
+  height: 300px;
+  display: flex;
+  padding-left: 10%;
+  border-bottom-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding-bottom: 5px;
+}
+.footer_col{ /*positions the footer and changes the lists so that they position themselves down instead of across and positions the lists in the correct places*/
+  display: flex;
+  flex-direction: column;
+  margin-right: 40%;
+  margin-top: 30px;
+}
+.footer_col a{ /*Changes the footer links to white, changes the font size, and adding a margin between each link for spacing*/
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.footer_col h4{ /*Changes the footer headers to white with no text decoration, making the font size the correct size, as well as making the headers bold*/
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.locationbar{/* sets the position of the location bar to the bottom as well as positioning the location bar to the center*/
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  padding-left: 20%;
+  bottom: 0;
+  background-color: white;
+}
